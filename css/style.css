@@ -1,0 +1,460 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #707070;
+                                                
+}
+
+section{
+    padding: 30px 0px;
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'Arsenal', sans-serif;
+}
+h2{
+    font-size: 30px;
+    font-family: 'Arsenal', sans-serif;
+}
+h3{
+    font-size: 26px;
+    color: #323536;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 600;
+}
+h4{
+    font-size: 22px;
+}
+h5{
+    font-size: 18px;
+}
+p{
+    font-size: 15px;
+}
+
+@media(max-width: 480px){
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 24px;
+    }
+}
+
+/*Menu CSS BEGINS*/
+header{
+    padding: 20px 0px;
+    transition: .3s all ease-in-out;
+    background: #fff;
+}
+.nav-logo{
+    width: 220px;
+    transition: .3s all ease-in-out;
+}
+.nav-link{
+    padding: 0 0.8rem !important;
+    color: #434141;
+}
+.navbar-toggler-icon{
+    color: #000;
+}
+.stickymain {
+    position: fixed !important;
+    top: 0;
+    width: 100% !important;
+    z-index: 999;
+    background: #fff;
+    transition: .3s all ease-in-out;
+    box-shadow: 0 0 8px 0px #ddd;
+    padding: 15px 0px
+}
+.stickymain .nav-logo{
+    width: 180px;
+    transition: .3s all ease-in-out;
+}
+@media(max-width: 991px){
+    .nav-link{
+        text-align: right;
+        padding: 5px 10px !important;
+    }
+}
+/*Menu CSS ENDS*/
+
+
+
+/*Footer CSS BEGINS*/
+.footer-sec{
+    background: #12367D;
+    padding: 30px 0px;
+}
+.footer-menu-heading, .footer-menu-heading a{
+    color: #fff;
+    font-size: 16px;
+}
+.footer-menu-list{
+    padding-left: 0;
+    list-style-type: none;
+}
+.footer-menu-list li a{
+    color: #EAEAEA;
+    font-size: 13px;
+}
+.social-links ul{
+    padding-left: 0;
+    list-style-type: none;
+}
+.social-links ul li{
+    display: inline-block;
+}
+.social-links ul li a{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+.social-links ul li a i{
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.footer-links p{
+    color: #EAEAEA;
+    font-size: 14px;
+}
+.footer-links a{
+    color: #EAEAEA;
+    font-size: 13px;
+}
+/*Footer CSS ENDS*/
+
+/*Slick CSS Begin*/
+
+.slick-slide{
+    height: auto;
+}
+.slider-container {
+    position: relative
+}
+
+.slick-arrow {
+     font-family: "Font Awesome 5 Free";
+    background: transparent;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: -13%;
+    margin: auto;
+    color: #1d1818;
+    z-index: 1;
+    border: 0;
+    font-size: 0;
+    outline: 0;
+    border: 0;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    opacity: 1;
+    outline: 0;
+}
+
+button{
+    outline: 0 !important;
+}
+
+.slick-arrow.slick-prev:before {
+    content: url('../img/left-arrow.png');
+    background-size: cover;
+    cursor: pointer;
+}
+
+.slick-arrow.slick-prev {
+    left: 93.5%;
+}
+.slick-arrow.slick-next {
+    right: 0;
+}
+
+.slick-arrow.slick-next:before {
+    content: url('../img/right-arrow.png');
+    background-size: cover;
+    cursor: pointer;
+}
+
+.slick-dots {
+    text-align: center;
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+    /*margin: 0 3px;*/
+    padding: 0;
+    cursor: pointer
+}
+
+.slick-dots li:only-child {
+    opacity: 0
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 12px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: 0;
+    background: 0 0
+}
+
+.slick-dots li button::before,
+.slick-dots li button:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    margin: auto auto;
+    width: 8px;
+    height: 8px;
+    background: 0 0;
+    background: #ddd;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%
+}
+
+.slick-dots li.slick-active button::before,
+.slick-dots li.slick-active button:before {
+    background: #12367D;
+    width: 20px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.slick-track{
+    margin-left: initial;
+    margin-right: initial;
+}
+@media(max-width: 768px){
+    .slick-arrow.slick-prev{
+        left: 89%;
+    }
+}
+@media(max-width: 480px){
+    .slick-arrow.slick-prev{
+        left: 75%;
+    }
+    .slick-arrow.slick-next{
+        right: 5%;
+    }
+}
+
+@media(max-width: 320px){
+    .slick-arrow.slick-prev{
+        left: 71%;
+    }
+    .slick-arrow.slick-next{
+        right: 5%;
+    }
+}
+
+/*Slick Css END*/
+
+.form-control{
+    border-radius: 0;
+}
+.btn.btn-brand{
+    color: #ffffff;
+    background: #000;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #000;
+    padding: 6px 35px;
+    border-radius: 14px;
+}
+.btn.btn-brand:hover{
+    color: #000;
+    background: #ffffff;
+}
+.btn.btn-review{
+    background: #000;
+    color: #fff;
+    padding: 4px 15px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    font-size: 14px;
+}
+.btn.btn-review:hover{
+    background: #fff;
+    color: #000;
+}
+.bg-blue{
+    background: #12367D;
+}
+.bg-light-blue{
+    background: #EEEFFF
+}
+
+/*Home Page CSS BEGINS*/
+
+.banner-sec{
+    background: url('../img/home-banner.png') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+}
+@media(max-width: 480px){
+    .banner-sec{
+        min-height: 38vh;
+    }
+}
+
+.categories-slider{
+    padding-top: 40px;
+}
+.category-wrapper{
+    background: #fff;
+    padding: 0px 10px;
+    border-radius: 14px 14px 0px 14px;
+}
+.category-wrapper img{
+    display: inline-block;
+    width: 40px;
+    margin-right: 5px;
+}
+.category-icon img{
+    width: 80px;
+    margin: auto;
+}
+.category-title{
+    margin-bottom: 0;
+    color: #323536;
+    font-weight: 500;
+    font-size: 14px;
+}
+.category-item{
+    margin-bottom: 30px;
+}
+
+.featured-review-wrapper{
+    background: #FCFCFC;
+    padding: 15px;
+    box-shadow: 0px 0px 8px 1px #ddd;
+    border-radius: 14px 14px 0px 14px;
+    margin: 10px 0px;
+}
+
+.featured-review-wrapper h5{
+    color: #12367D;
+}
+.review-stars .fa-star{
+    color: #ddd;
+    font-size: 14px;
+}
+.review-stars .fa-star.active{
+    color: #FFCC00;
+}
+.featured-review-section{
+    position: relative;
+}
+.featured-review-section .abs-icon{
+    position: absolute;
+    left: -15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.featured-business-sec .bg-img-one{
+    min-height: 320px;
+    margin-bottom: 10px;
+    border-radius: 14px 14px 0px 14px;
+}
+.featured-business-sec .bg-img-two, .featured-business-sec .bg-img-three{
+    min-height: 155px;
+    margin-bottom: 10px;
+    border-radius: 14px 14px 0px 14px;
+}
+.featured-business-sec .bg-img-row-two{
+    min-height: 160px;
+    margin-bottom: 10px;
+    border-radius: 14px 14px 0px 14px;
+}
+.pos-relative{
+    position: relative;
+}
+.bg-img-caption{
+    position: absolute;
+    background: rgb(18 54 125 / 70%);
+    color: #fff;
+    bottom: 10px;
+    padding: 5px 20px;
+    margin-bottom: 0;
+    line-height: 1.2;
+    font-size: 14px;
+}
+.featured-business-sec{
+    position: relative;
+}
+.featured-business-sec .abs-icon{
+    position: absolute;
+    bottom: 90px;
+    right: 0;
+    width: 100px;
+}
+@media(max-width: 480px){
+    .featured-business-sec .bg-img-one{
+        min-height: 200px;
+    }
+    .featured-business-sec .bg-img-row-two{
+        min-height: 180px;
+    }
+}
+.search-div .form-control{
+    font-size: 12px;
+    border: 0;
+    padding: 0.775rem .75rem;
+}
+.search-div .form-control.category-search{
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+.search-div .location-search{
+    border-left: 1px solid #ddd;
+}
+.search-div .input-group-btn{
+    background: #fff;
+    border-top-right-radius: 14px;
+}
+.search-div .btn.btn-search-icon{
+    padding: 0.675rem 1.2rem;
+    background: #fc0;
+    border-radius: 14px 14px 0px 14px;
+}
+@media(min-width: 768px){
+    .desk-blk{
+        display: block;
+    }
+}
+/*Home Page CSS ENDS*/

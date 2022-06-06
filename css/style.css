@@ -304,6 +304,8 @@ button{
     border-radius: 50px;
     border: 1px solid #000;
     font-size: 14px;
+    width: 168px;
+    text-align: left;
 }
 .btn.btn-review:hover{
     background: #fff;
@@ -458,3 +460,72 @@ button{
     }
 }
 /*Home Page CSS ENDS*/
+
+/*Category Page CSS BEGINS*/
+.breadcrumb{
+    background: none;
+    padding: 0;
+}
+.breadcrumb li{
+    margin-right: 22px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(255 255 255 / 50%);
+}
+.breadcrumb li:before{
+    content: '\f0da';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-weight: 900;
+    right: -15px;
+    top: 3px;
+    color: #fff;
+    font-size: 12px;
+}
+.breadcrumb li:last-child:before{
+    display: none;
+}
+.breadcrumb li a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.category-banner-content{
+    min-height: 62vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-wrapper{
+    background: #fff;
+    border-radius: 14px 14px 0px 14px;
+    box-shadow: 0px 0px 8px 1px #ddd;
+    margin-bottom: 30px;
+}
+.card-wrapper .image-card{
+    border-radius: 14px 14px 0px 14px;
+    min-height: 200px;
+}
+.card-wrapper .card-content{
+    padding: 15px;
+}
+.card-wrapper .card-content h3{
+    color: #183761;
+    font-size: 22px;
+}
+.review-info-text{
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #434141;
+    font-weight: 500;
+}
+.review-info-text i{
+    position: absolute;
+    left: 0;
+    font-size: 22px;
+    color: #FFCC00;
+}
+/*Category Page CSS ENDS*/

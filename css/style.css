@@ -22,6 +22,8 @@ h1{
 h2{
     font-size: 30px;
     font-family: 'Arsenal', sans-serif;
+    font-weight: 600;
+    color: #323536;
 }
 h3{
     font-size: 26px;
@@ -31,6 +33,7 @@ h3{
 }
 h4{
     font-size: 22px;
+    font-family: 'Arsenal', sans-serif;
 }
 h5{
     font-size: 18px;
@@ -50,7 +53,12 @@ p{
         font-size: 24px;
     }
 }
-
+.text-black{
+    color: #000;
+}
+.bg-light-shade{
+    background: #EDE7F4;
+}
 /*Menu CSS BEGINS*/
 header{
     padding: 20px 0px;
@@ -62,11 +70,30 @@ header{
     transition: .3s all ease-in-out;
 }
 .nav-link{
-    padding: 0 0.8rem !important;
+    padding: 0 1rem !important;
     color: #434141;
+    font-size: 15px;
+    font-weight: 500;
+}
+.bg-blue .nav-link{
+    color: #fff;
 }
 .navbar-toggler-icon{
     color: #000;
+}
+header .search-div .input-group{
+    border: 1px solid #ddd;
+    border-radius: 14px 14px 0px 14px;
+}
+header .search-div .form-control{
+    padding: 0.275rem 0.75rem;
+}
+header .search-div .btn.btn-search-icon {
+    padding: 0.275rem 0.7rem;
+    font-size: 14px;
+}
+header.bg-blue .search-div .input-group{
+    border: none;
 }
 .stickymain {
     position: fixed !important;
@@ -87,6 +114,9 @@ header{
         text-align: right;
         padding: 5px 10px !important;
     }
+}
+header.bg-blue .navbar-toggler-icon{
+    color: #fff;
 }
 /*Menu CSS ENDS*/
 
@@ -189,7 +219,15 @@ button{
     background-size: cover;
     cursor: pointer;
 }
-
+.tabs-slider .slick-arrow{
+    top: 18%;
+}
+.tabs-slider .slick-arrow.slick-prev {
+    left: 101.5%;
+}
+.tabs-slider .slick-arrow.slick-next {
+    right: -10%;
+}
 .slick-dots {
     text-align: center;
     padding: 0;
@@ -314,6 +352,9 @@ button{
 .bg-blue{
     background: #12367D;
 }
+.text-blue{
+    color: #12367D;
+}
 .bg-light-blue{
     background: #EEEFFF
 }
@@ -358,6 +399,9 @@ button{
 }
 .category-item{
     margin-bottom: 30px;
+}
+.category-item a:hover{
+    text-decoration: none;
 }
 
 .featured-review-wrapper{
@@ -450,9 +494,11 @@ button{
     border-top-right-radius: 14px;
 }
 .search-div .btn.btn-search-icon{
-    padding: 0.675rem 1.2rem;
+    padding: 0.275rem 0.7rem;
     background: #fc0;
     border-radius: 14px 14px 0px 14px;
+    color: #fff;
+    font-size: 22px;
 }
 @media(min-width: 768px){
     .desk-blk{
@@ -489,7 +535,17 @@ button{
 .breadcrumb li a{
     color: #fff;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
+}
+
+.bg-bright .breadcrumb li{
+    color: #8B9BB0;
+}
+.bg-bright .breadcrumb li a{
+    color: #183761;
+}
+.bg-bright .breadcrumb li:before{
+    color: #183761;
 }
 
 .category-banner-content{
@@ -529,3 +585,185 @@ button{
     color: #FFCC00;
 }
 /*Category Page CSS ENDS*/
+
+.review-img-card-one{
+    min-height: 275px;
+    margin-bottom: 5px;
+}
+.review-img-card-two{
+    min-height: 140px;
+}
+.review-img-card-three{
+    min-height: 67.5px;
+    margin-bottom: 5px;
+}
+.bg-text{
+    background: #7D1A47;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 14px 14px 0px 14px;
+}
+.similar-schools-list-content h4{
+    color: #434141;
+    font-size: 18px;
+}
+.similar-schools-list-content p{
+    font-size: 14px;
+}
+.similar-schools-card-wrapper{
+    background: #fff;
+    box-shadow: 0px 0px 8px 1px #ddd;
+}
+.similar-schools-card{
+    position: relative;
+}
+.similar-schools-card .review-stars{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    padding: 5px 30px;
+}
+.schools-card-content{
+    padding: 20px;
+}
+.schools-card-content h4{
+    margin-bottom: 15px;
+}
+.schools-card-content p{
+    font-size: 14px;
+    font-weight: 300;
+}
+.trusted-reviews-tabs .nav-tabs{
+    border: 1px solid #7D1A47;
+    border-radius: 14px 14px 0px 14px;
+    width: fit-content;
+}
+.trusted-reviews-tabs .nav-tabs .nav-link{
+    padding: 10px 25px !important;
+    border: 0;
+    font-family: 'Arsenal', sans-serif;
+    background: #7D1A47;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 0;
+}
+.trusted-reviews-tabs .nav-tabs .nav-link.active{
+    color: #000;
+    background: none;
+}
+.trusted-reviews-tabs .nav-tabs .nav-item:last-child .nav-link{
+    border-top-right-radius: 14px;
+}
+.trusted-reviews-tabs .nav-tabs .nav-item:first-child .nav-link{
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+.trusted-reviews-tabs .nav-tabs .nav-item:first-child .nav-link.active{
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-top-right-radius: 0;
+    background: none;
+}
+.trusted-reviews-tabs .nav-tabs .nav-item:last-child .nav-link.active{
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    background: none;
+}
+.trusted-reviews-tabs .tab-content{
+    margin-top: 40px;
+}
+.discover-schools-tabs .nav-tabs{
+    width: 100%;
+}
+.discover-schools-tabs .nav-tabs .nav-item{
+    width: 50%;
+}
+@media(max-width: 480px){
+    .trusted-reviews-tabs.discover-schools-tabs .nav-tabs .nav-link{
+        font-size: 16px;
+        padding: 10px !important;
+        text-align: left;
+    }
+}
+@media(max-width: 320px){
+    .trusted-reviews-tabs .nav-tabs .nav-link{
+        font-size: 16px;
+        padding: 10px !important;
+    }
+    .trusted-reviews-tabs.discover-schools-tabs .nav-tabs .nav-link{
+        font-size: 15px;
+    }
+}
+.border-radius{
+    border-radius: 14px 14px 0px 14px;
+}
+.faq-wrapper{
+    margin-bottom: 30px;
+}
+.review-wrapper{
+    position: relative;
+    padding-left: 50px;
+    margin-top: 40px;
+}
+.review-name-symbol{
+    position: absolute;
+    left: 0;
+}
+
+.review-name-symbol p{
+    color: #183761;
+    background: #7FD59C;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.font-light{
+    font-weight: 300;
+}
+.review-tags p{
+    display: inline-block;
+    background: #183761;
+    color: #fff;
+    padding: 1px 10px;
+    border-radius: 14px 14px 0px 14px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.review-content p{
+    color: #2D496F;
+    line-height: 28px;
+}
+.trusted-reviews-tabs.slider-tabs{
+    background: #fc0;
+    border-radius: 14px 14px 0px 14px;
+}
+
+.trusted-reviews-tabs.slider-tabs .nav-tabs{
+    width: 90%;
+    background: #fff;
+    border-radius: 14px 0px 0px 14px;
+}
+.trusted-reviews-tabs.slider-tabs .nav-tabs .nav-link {
+    padding: 15px 15px !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    border-right: 1px solid #ddd;
+}
+.trusted-reviews-tabs.slider-tabs .nav-tabs .nav-item:first-child .nav-link.active,
+.trusted-reviews-tabs.slider-tabs .nav-tabs .nav-item .nav-link.active{
+    background: #fff;
+}
+.trusted-reviews-tabs.slider-tabs .nav-tabs .slick-current .nav-link{
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+.trusted-reviews-tabs.slider-tabs .nav-tabs .nav-item:last-child .nav-link{
+    border-top-right-radius: 0px;
+}

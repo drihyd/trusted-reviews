@@ -28,12 +28,27 @@
 <header id="mainheader">
   <div class="container">
     <div class="row align-items-sm-center">
-      <div class="col-4">
-        <a href="#">
+      <div class="col-sm-4 col-6">
+        <a href="./index.html">
           <img src="./img/logo.png" alt="Trusted Reviews" class="img-fluid nav-logo">
         </a>
       </div>
-      <div class="col-8">
+      <div class="col-sm-3 d-sm-block d-none">
+        <div class="search-div">
+          <form class="navbar-form" role="search" action="#" method="GET">
+              <div class="input-group"> 
+                <input class="form-control category-search" placeholder="Search" name="q">
+                <input class="form-control location-search" placeholder="Hyderabad" name="p"> 
+                <span class="input-group-btn"> 
+                  <button class="btn btn-search-icon" type="submit">
+                  <i class="fas fa-search"></i>
+                  </button> 
+                </span> 
+              </div>
+            </form>
+        </div>
+      </div>
+      <div class="col-sm-5 col-6">
         <nav class="navbar navbar-expand-lg p-0 justify-content-end">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">☰</span>
@@ -79,7 +94,104 @@
     </div>
   </div>
 </section>
-
+<section>
+  <div class="container">
+    <div class="trusted-reviews-tabs slider-tabs">
+      <ul class="nav nav-tabs tabs-slider" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="prisec-tab" data-toggle="tab" href="#prisec" role="tab" aria-controls="prisec" aria-selected="true">Primary <br>& Secondary</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="coluni-tab" data-toggle="tab" href="#coluni" role="tab" aria-controls="coluni" aria-selected="false">Colleges <br>& Universities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="spoaca-tab" data-toggle="tab" href="#spoaca" role="tab" aria-controls="spoaca" aria-selected="false">Sports <br>Academies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="acacoach-tab" data-toggle="tab" href="#acacoach" role="tab" aria-controls="acacoach" aria-selected="false">Academic <br>Coaching Centers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="artmusic-tab" data-toggle="tab" href="#artmusic" role="tab" aria-controls="artmusic" aria-selected="false">Art, Music <br>& Theater Classes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="spo-tab" data-toggle="tab" href="#spo" role="tab" aria-controls="spo" aria-selected="false">Sports <br>Academies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="aca-tab" data-toggle="tab" href="#aca" role="tab" aria-controls="aca" aria-selected="false">Academic <br>Coaching Centers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="art-tab" data-toggle="tab" href="#art" role="tab" aria-controls="art" aria-selected="false">Art, Music <br>& Theater Classes</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="prisec" role="tabpanel" aria-labelledby="prisec-tab">
+          <p>1Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="tab-pane fade" id="coluni" role="tabpanel" aria-labelledby="coluni-tab">
+          <p>2Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="tab-pane fade" id="spoaca" role="tabpanel" aria-labelledby="spoaca-tab">
+          <p>3Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="tab-pane fade" id="acacoach" role="tabpanel" aria-labelledby="acacoach-tab">
+          <p>4Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="tab-pane fade" id="artmusic" role="tabpanel" aria-labelledby="artmusic-tab">
+          <p>5Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="tab-pane fade" id="spo" role="tabpanel" aria-labelledby="spo-tab">
+          <p>6Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="tab-pane fade" id="aca" role="tabpanel" aria-labelledby="aca-tab">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="tab-pane fade" id="art" role="tabpanel" aria-labelledby="art-tab">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section>
   <div class="container">
     <h4>67 Schools available in Hyderabad</h4>
@@ -405,6 +517,27 @@
         autoplaySpeed: 5000,
         pauseOnHover:true,
         dots: true,
+        fade: false,
+        arrows: true,
+        infinite: false,
+        responsive:[
+        {
+           breakpoint:480,
+           settings:
+           {
+              slidesToShow:1,
+              slidesToScroll:1,
+           }
+        }
+     ]
+    });
+     $('.tabs-slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 5000,
+        pauseOnHover:true,
+        dots: false,
         fade: false,
         arrows: true,
         infinite: false,
